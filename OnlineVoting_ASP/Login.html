@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="vote.ico" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Log In</title>
+
+
+</head>
+<body>
+    <header class="container">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="header__wrapper">
+                    <div class="logo col-sm-offset-1">
+                        <img src="https://www.yourvotematters.co.uk/__data/assets/git_bridge/0007/219580/dist/mysource_files/logo.svg" alt="vote.jpg" />
+                        <br />
+                        <label>Your Vote, Your Voice</label>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <div id="imaginary_container">
+                            <div class="input-group stylish-input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="header__navigation clearfix">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <ul class="col-xs-12 header__navigation--firstlevel nav nav-justified">
+                        <li>
+                            <a href="file:///C:/Users/bhatt/Desktop/Online%20Voting%20System/HomePage.html#" class="header__navigation--mainlink">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__navigation--mainlink">Can I Vote?</a>
+                        </li>
+                        <li>
+                            <a href="signUp.html" class="header__navigation--mainlink">Register</a>
+                        </li>
+                        <li>
+                            <a href="Login.html" class="header__navigation--mainlink">Sign In</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container ">
+        <form>
+            <div class="panel panel-primary">
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title">Register Voter</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div class="form-group">
+                        <label for="email" class="control-label">Email</label>
+                        <input id="email" placeholder="Email" type="text" class="form-control" name="email">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="control-label">Password</label>
+                        <input id="password" placeholder="Password" type="password" class="form-control" name="password">
+
+                    </div>
+                </div>
+                <div class="panel-footer submitt-button-div">
+                    <ul >
+                        <li >
+                            <button class="btn btn-primary" onclick="location.href='UserPage.html';" type="button">Sign In</button>
+                        </li>
+                        <li class="right-button">
+                            <p>Are you a new user?</p>
+                            <input type="button" class="btn btn-primary" onclick="location.href='signUp.html';" value="Register Here" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

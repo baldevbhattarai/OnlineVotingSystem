@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Primary.master.cs" Inherits="OnlineVoting_ASP.Primary" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--%>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="shortcut icon" href="vote.ico" />
+  <%--  <script>
+        jQuery(document).ready(function () {
+
+            $("btnLogOut").on("click",alert("button clicked"));
+            alert("hello there");
+        });
+    </script>--%>
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header class="container">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <img src="https://www.yourvotematters.co.uk/__data/assets/git_bridge/0007/219580/dist/mysource_files/logo.svg" alt="vote.jpg" />
+                        <br />
+                        <label>Your Vote, Your Voice</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="imaginary_container">
+                            <div class="input-group stylish-input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="searchString"/>
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <asp:Panel ID="PanelBeforeLogin" runat="server">
+                    <div class="col-4" style="display:inline-block">
+                        <ul class="nav navbar-nav navbar-right" onmouseover="show(this)">
+                            <li><a href="Login.aspx"><b>Login</b> </a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" onmouseover="show(this)" onmouseout="hide(this)">
+                            <li><p class="navbar-text">New User?</p></li>
+                            <li><a href="signUp.aspx"><b>Register</b></a>
+                            <span class="tooltip">Are a new user? Register</span>
+                            </li>
+                        </ul>
+                    </div>
+                   </asp:Panel>
+                    <asp:Panel ID="PanelAfterLogin" runat="server" Visible="False">
+                    <ul class="nav navbar-nav">
+                        <li>
+                        <h4>Welcom to Online Voting</h4>
+
+                        </li>
+                        <li>
+                            <asp:Button ID="btnLogOut" runat="server" type="button"  CssClass="btn btn-success" Text="Log Out" OnClick="btnLogOut_Click" UseSubmitBehavior="False" />
+                        </li>
+                    </ul>
+                    </asp:Panel>
+                </div>
+            </div>
+        </div>
+        <nav class="header__navigation clearfix">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <ul class="col-xs-12 header__navigation--firstlevel nav nav-justified">
+                        <li>
+                            <a href="HomePage" class="header__navigation--mainlink">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__navigation--mainlink">Can I Vote?</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__navigation--mainlink">About Us</a>
+                        </li>
+                        <li>
+                            <a href="Admin" class="header__navigation--mainlink">Admin Page</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
